@@ -6,7 +6,7 @@
         display: flex;
         font-family: sans-serif;
         font-size: 18pt;
-        color: #ff5757;
+        color: #baeafa;
         padding: 5px;
         border: 1px solid #ffffff;
         justify-content: left;
@@ -46,9 +46,7 @@
     weekday[6] = "saturday";
 
     const monthNames = ["january", "february", "march", "april", "may", "june",
-      "july", "august", "september", "october", "november", "december"
-    ];
-
+      "july", "august", "september", "october", "november", "december"];
     
     var today = new Date();
     var hrs = today.getHours();
@@ -58,11 +56,11 @@
     var greet;
 
     if (hrs < 12)
-        greet = 'good morning, your name.  ';
+        greet = 'good morning, diana.';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'good afternoon, your name. ';
+        greet = 'good afternoon, diana.';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'good evening, your name.  ';
+        greet = 'good evening, diana.';
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
